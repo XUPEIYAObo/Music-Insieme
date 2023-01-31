@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Music Insieme</title>
+		
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon">
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	</head>
+	<style>
+		ul li{list-style: none;
+			padding-top: 1.875rem;
+		}
+		*{
+			padding:0;
+			margin: 0;
+		}
+		body{
+			background: black;
+		}
+	</style>
+	<script>
+		window.onload = function()
+		{
+			var url=decodeURI(window.location .href);
+			var aa=url.indexOf('=');
+			if (aa>-1){
+			div_id=url.substring(aa+1);
+			  
+			console.log(div_id);
+			}
+			document.getElementById("1d").style.display='none';
+			document.getElementById("2d").style.display='none';
+			document.getElementById("3d").style.display='none';
+			document.getElementById(div_id).style.display='block';
+		}
+	</script>
+
+	<body>
+		<div align="center" id="1d">
+			<ul>
+				<li><img src="./assets/img/album/album-1.jpg" alt="" width=70%></li>
+				<li><img src="./assets/img/album/album-2.jpg" alt="" width=70%></li>
+				<li><img src="./assets/img/album/album-3.jpg" alt="" width=70%></li>
+				<li><img src="./assets/img/album/album-4.jpg" alt="" width=70%></li>
+			</ul>
+		</div>
+		<div align="center" id="2d" >
+			<ul>
+				<li><img src="./assets/img/album/album-10.png" alt="" width=70%></li>
+				<li><img src="./assets/img/album/album-9.png" alt="" width=70%></li>
+				<li><img src="./assets/img/album/album-8.png" alt="" width=70%></li>
+			</ul>
+		</div>
+		<div align="center" id="3d">
+			<ul>
+				<li><img src="./assets/img/album/album-5.jpg" alt="" width=70%></li>
+				<li><img src="./assets/img/album/album-6.jpg" alt="" width=70%></li>
+				<li><img src="./assets/img/album/album-6.png" alt="" width=70%></li>
+			</ul>
+		</div>
+	</body>
+
+</html>
+
+
